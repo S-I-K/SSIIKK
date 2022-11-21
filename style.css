@@ -20,7 +20,8 @@ a {
 }
 
 .wrap {
-  width: 1920px;
+  width: 100vw;
+  max-width: 1920px;
   height: 100vh;
   background: #999;
   /* display: flex; */
@@ -128,33 +129,57 @@ header .container .header-right ul li a img {
   display: flex;
   justify-content: center;
 }
-.gnb .container .gnb-left ul li:not(:first-child) {
+.gnb .container .gnb-left > ul > li:not(:first-child) {
   margin-left: 40px;
 }
-.gnb .container .gnb-left ul li a {
+.gnb .container .gnb-left > ul > li > a {
   display: block;
-  height: auto;
+  /* border: 1px solid red; */
+  padding-bottom: 20px;
 }
-.gnb .container .gnb-left ul li a img {
+.gnb .container .gnb-left > ul > li > a > img {
   width: 80px;
   height: 45px;
 }
-/* drop down menu */
-.gnb .container .gnb-left ul li .dropdown-menu {
+/* gnb-left > dropdown menu */
+.gnb .container .gnb-left > ul > li:hover > .dropdown {
+  display: flex;
+}
+.gnb .container .gnb-left > ul > li > .dropdown {
+  /* border: 1px solid red; */
+  display: none; /* flex */
   flex-direction: column;
   align-items: center;
-  background: #f4efe9;
   padding: 40px 20px;
+  background: #f4efe9;
   position: absolute;
-  top: 30px;
+  top: 40px;
+  border-radius: 12px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
 }
-.gnb .container .gnb-left ul li .dropdown-menu li {
+.gnb .container .gnb-left > ul > li > .dropdown::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 24px;
+  height: 24px;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  background: #f4efe9;
+  transform: rotate(45deg);
 }
-.gnb .container .gnb-left ul li .dropdown-menu li a {
+.gnb .container .gnb-left > ul > li > .dropdown li:not(:last-child) {
+  margin-bottom: 30px;
+}
+.gnb .container .gnb-left > ul > li > .dropdown li a {
   font-size: 18px;
   font-weight: 600;
   display: block;
-  width: auto;
+  width: 100%;
+  color: #1c1c1e;
 }
 
 /* right */
@@ -178,17 +203,18 @@ header .container .header-right ul li a img {
 
 /* banner */
 .banner {
-  width: 1920px;
+  width: 100%;
   height: 700px;
   /* border: 1px solid red; */
   position: relative;
 }
 .banner .slide1 {
-  width: 1920px;
+  width: 100%;
   height: 700px;
   background: url("./imgs/slide1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .banner .pager {
   width: 100%;
@@ -202,8 +228,8 @@ header .container .header-right ul li a img {
 }
 .banner .pager li a {
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border: 1px solid #1c1c1e;
   border-radius: 50px;
 }
