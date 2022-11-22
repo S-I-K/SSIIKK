@@ -20,10 +20,10 @@ a {
 }
 
 .wrap {
-  width: 100vw;
+  width: 100%;
   max-width: 1920px;
-  height: 100vh;
-  background: #999;
+  height: 300vh;
+  background: #fff;
   /* display: flex; */
   /* justify-content: center; */
   position: relative;
@@ -105,8 +105,8 @@ header .container .header-right ul li a img {
   top: 40px;
 }
 .gnb .container {
-  width: 1200px;
   /* border: 1px solid red; */
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,9 +208,11 @@ header .container .header-right ul li a img {
   /* border: 1px solid red; */
   position: relative;
 }
-.banner .slide1 {
+.banner .slide {
   width: 100%;
   height: 700px;
+}
+.banner .slide1 {
   background: url("./imgs/slide1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -236,4 +238,264 @@ header .container .header-right ul li a img {
 
 .banner .pager li a.select {
   background: #1c1c1e;
+}
+
+/* season-wrap */
+.season-wrap {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.season-wrap .container {
+  padding: 0 20px;
+  width: 1200px;
+  /* border: 1px solid #fff; */
+}
+.season-wrap .container .season-title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 140px 0 60px;
+}
+.season-wrap .container .season-title-wrap .season-title {
+  font-size: 40px;
+  color: #1c1c1e;
+  font-weight: bold;
+}
+.season-wrap .container .season-title-wrap .more-btn {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #9a9a9a;
+  position: absolute;
+  right: 0;
+}
+.season-wrap .container .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+}
+/* season item wrap */
+.season-wrap .container .season-item-wrap {
+  width: 50%;
+  display: flex;
+  /* border: 1px solid red; */
+}
+/* season item left */
+.season-wrap .container .season-item-wrap .season-item-left {
+  width: 100%;
+  /* padding-right: 10px; */
+  /* border: 1px solid #fff; */
+}
+/* season item left-banner */
+.season-item-banner {
+  width: 100%;
+  height: 433px;
+  margin-bottom: 50px;
+}
+.season-item-banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.season-item-banner a img {
+  width: 100%;
+}
+/* season item left-items */
+.season-wrap .container .season-item-wrap .season-item-left .season-item {
+  /* border: 1px solid red; */
+  display: flex;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+/* item-left */
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left {
+  /* border: 1px solid red; */
+  width: 275px;
+  height: 300px;
+  margin-right: 20px;
+  position: relative;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  > a {
+  width: 100%;
+  height: 100%;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  > a
+  > img {
+  transition: all 0.4s;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  > a:hover
+  > img {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color
+  li {
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color
+  li:not(:last-child) {
+  margin-right: 5px;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color
+  li:nth-child(1) {
+  background: #555e2c;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color
+  li:nth-child(2) {
+  background: #e9d49b;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-color
+  li:nth-child(3) {
+  background: #2e2e2e;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-wish {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.season-wrap
+  .container
+  .season-item-wrap
+  .season-item-left
+  .season-item
+  .item-left
+  .item-wish
+  > img {
+  width: 100%;
+}
+/* right */
+.season-wrap .container .season-item-wrap .item-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.season-wrap .container .season-item-wrap .item-right .desc {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.season-wrap .container .season-item-wrap .item-right .desc .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1c1c1e;
+}
+.season-wrap .container .season-item-wrap .item-right .desc .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1c1c1e;
+}
+.season-wrap .container .season-item-wrap .item-right .desc .price .won {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1c1c1e;
+}
+.season-wrap .container .season-item-wrap .item-right .desc .price .free {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b6b6b;
+}
+
+.season-wrap .container .season-item-wrap .item-right .desc .wish-count {
+  font-size: 13px;
+  color: #6b6b6b;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+}
+.season-wrap .container .season-item-wrap .item-right .desc .wish-count img {
+  width: 16px;
+  margin-right: 5px;
 }
